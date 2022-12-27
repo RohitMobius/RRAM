@@ -1,0 +1,100 @@
+// Generated for: spectre
+// Generated on: Dec 27 13:56:17 2022
+// Design library name: RRAM
+// Design cell name: SRAM_RRAM_try
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters V_WL V_WR1 V_WR0
+include "/mnt/cadence_tools/gpdk045_v_6_0/gpdk045/../models/spectre/gpdk045.scs" section=mc
+
+// Library name: RRAM
+// Cell name: SRAM_RRAM_try
+// View name: schematic
+NM10 (WL_bar WL 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM8 (VDD WR0_bar BL 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM9 (VDD WR1_bar BL_bar 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM3 (BL WL Q 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM2 (BL_bar WL Q_bar 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM0 (Q Q_bar 0 0) g45n1svt w=(220n) l=45n nf=1 as=30.8f ad=30.8f ps=720n \
+        pd=720n nrd=636.364m nrs=636.364m sa=140n sb=140n sd=160n \
+        sca=159.86395 scb=0.10695 scc=0.01980 m=(1)
+NM1 (Q_bar Q 0 0) g45n1svt w=(220n) l=45n nf=1 as=30.8f ad=30.8f ps=720n \
+        pd=720n nrd=636.364m nrs=636.364m sa=140n sb=140n sd=160n \
+        sca=159.86395 scb=0.10695 scc=0.01980 m=(1)
+NM5 (BL WR0 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM4 (BL_bar WR1 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM7 (WR1_bar WR1 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM6 (WR0_bar WR0 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM64 (net1 Q 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+NM56 (Q_buf net1 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+PM2 (WL_bar WL VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+PM1 (BL_bar WL_bar Q_bar VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f \
+        ad=33.6f ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n \
+        sd=160n sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+PM0 (BL WL_bar Q VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+PM5 (WR1_bar WR1 VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+PM4 (WR0_bar WR0 VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+PM25 (Q_buf net1 VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+PM26 (net1 Q VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+V0 (PL 0) vsource dc=1 type=dc
+V3 (VDD 0) vsource dc=1 type=dc
+V2 (WL 0) vsource dc=V_WL type=dc
+V5 (WR1 0) vsource dc=V_WR1 type=dc
+V4 (WR0 0) vsource dc=V_WR0 type=dc
+I3 (Q PL) RRAM_v_2_0_Beta a=2.5e-10 f=1e+13 Ea=0.7 Eh=1.12 Ei=0.82 r=1.5 \
+        alphah=7.5e-10 alpha=7.5e-10 Z=1 XT=4e-10 VT=0.4 L0=3e-09 x0=3e-09 \
+        w0=5e-10 WCF=5e-09 weff=5e-10 I0=1e+13 rou=1.9635e-05 pi=3.14159 \
+        Rth=500000 Kb=8.61733e-05 T0=300 switch=1 deltaGap=4e-05 \
+        deltaCF=0.0001 crit_x=5e-10 user_seed=0
+I4 (Q_bar PL) RRAM_v_2_0_Beta a=2.5e-10 f=1e+13 Ea=0.7 Eh=1.12 Ei=0.82 \
+        r=1.5 alphah=7.5e-10 alpha=7.5e-10 Z=1 XT=4e-10 VT=0.4 L0=3e-09 \
+        x0=3e-09 w0=5e-10 WCF=5e-09 weff=5e-10 I0=1e+13 rou=1.9635e-05 \
+        pi=3.14159 Rth=500000 Kb=8.61733e-05 T0=300 switch=1 \
+        deltaGap=4e-05 deltaCF=0.0001 crit_x=5e-10 user_seed=0
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
+ahdl_include "/home/caduser3/RRAM/RRAM_v_2_0_Beta/veriloga/veriloga.va"
